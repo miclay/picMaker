@@ -1,0 +1,31 @@
+*{ margin:0; padding:0; list-style-type:none;}
+a{ text-decoration: none; outline: none; color: #336699;}
+a:hover{text-decoration: underline;}
+form{ display:inline;}
+.fix:after{content:"."; display:block; clear:both; visibility:hidden; height:0;}
+.fix{ zoom:1;}
+.lf{float: left;}
+.rf{float: right;}
+.hidden{ width: 0;height: 0; overflow: hidden; font-size: 0; text-indent: -1000px;}
+.red{ color: #cc0000;}
+.canvas{ width: 419px; margin: 50px 0 0 20px;}
+.head{ padding-bottom: 20px;}
+.stage{ background: url(images/bg_transparent_03.gif) 0 0 repeat; border: dashed 1px #0099cc; cursor: move;}
+.operate{ width: 420px; line-height: 35px; padding-top: 20px; color: #666; text-align: right; margin-left: 25px;}
+.operate .txt{ width: 320px; height: 20px; padding: 2px 5px; border: solid 1px #ccc; box-shadow: 0 0 5px #ccc; border-radius: 5px;}
+.operate textarea.txt{ height: 50px; vertical-align: top;}
+.operate .btn{ padding: 10px 15px; margin-top: 15px; border: solid 1px #0099cc; background: #66ccff; color: #333; border-radius: 5px; cursor: pointer; font-size: 14px;font-weight: 700;}
+.operate .upload{ padding: 4px 10px;}
+.operate .range{ vertical-align: middle; width: 256px;}
+.operate .range_val{ width: 40px;}
+.operate .ipt_up{ width:260px;}
+
+#preview{ padding:20px;}
+#view_list .item{ float:left; display: inline; border: solid 1px #ccc; padding: 10px; margin: 5px; cursor: pointer;}
+#view_list .on{ border:solid 2px #cc0000; padding:9px; cursor:default;}
+#view_list img{ display:block;}
+
+@font-face {
+    font-family: 'LanTingHei';
+    src:url('font/lantinghei.ttf') format('truetype');
+}

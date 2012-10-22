@@ -1,0 +1,7 @@
+*{ margin:0; padding:0; list-style-type:none;}
+body{ padding:10px;}
+@font-face {
+    font-family: 'LanTingHei';
+    src:url('font/lantinghei.ttf') format('truetype');
+}
+.enter_link{ font-family:LanTingHei;}

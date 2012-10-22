@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>图文合成</title>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body onselectstart="return false;">
+
+<div id="picmaker">
+	<div class="hidden" style="font-family:LanTingHei;">字体</div>
+	<div class="canvas">
+		<p class="head">
+			<b>
+				<span class="red">***</span>
+				<a href="http://wiki.corp.cnb.yahoo.com/wiki/index.php/%E7%84%A6%E7%82%B9%E5%9B%BE%E8%A7%84%E8%8C%83" target="_blank">雅虎首页新闻类焦点图规范</a>
+				<span class="red">***</span>
+			</b>
+		</p>
+		<canvas id="stage" width="419" height="160" class="stage"></canvas>
+	</div>
+	<div class="operate">
+		<label>图片地址：</label>
+		<form method="post" action="/upload" enctype="multipart/form-data">
+			<input class="txt ipt_up" type="file" name="img_file" />
+			<input id="btn_upload" class="btn upload" type="submit" value="上传" />
+		</form>
+		<input type="hidden" id="ipt_url" value="" />
+		<br />
+		<br />
+		<label>底图放缩：</label>
+		<input class="range" max="1000" min="10" step="1" type="range" id="ipt_range" value="100" />
+		<input class="txt range_val" max="1000" pattern="[0-9]" type="text" id="ipt_range_val" value="100" /> %
+		<br />
+		<br />
+		<label>文本标题：</label>
+		<textarea id="ipt_title" class="txt" placeholder="标题文字">标题</textarea>
+		<br />
+		<button id="btn_save" class="btn">提交</button>
+	</div>
+</div>
+<div id="preview" style="display:none;">
+	<a class="back" href="javascript:void(0);">返回操作</a>
+	<div id="view_list" class="fix"></div>
+	<a class="back" href="javascript:void(0);">返回操作</a>
+<div>
+
+<script src="http://cn.yimg.com/js/jquery/jquery-1.6.4.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="static/stage.js"></script>
+</body>
+</html>
